@@ -12,5 +12,4 @@
       echo "Ocorreu um erro ao tentar atualizar o usuário";
    }
 
-   //Pode ser usado o if para verificar se o usuário foi deletado em conforme aos demais arquivos
 ?>
