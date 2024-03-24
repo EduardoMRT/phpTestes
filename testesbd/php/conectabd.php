@@ -13,6 +13,7 @@
         echo "Conexão realizada com sucesso!";
 }
 
-//ATALHO PARA INICIO
+//ATALHO PARA INICIO - FUTURAMENTE ESSE ARQUIVO SERÁ SEPARADO CORRETAMENTE
 echo "<button> <a href='../index.html'> Inicio </a> </button>";
+error_reporting(0);
 ?>
