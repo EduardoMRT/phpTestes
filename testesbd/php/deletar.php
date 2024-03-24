@@ -1,6 +1,7 @@
 <?php
    include("conectabd.php");
-   include("formulario.php");
+   
+   $cpf = $_POST['cpf'];
 
    //DELETANDO USUARIOS
    $sql = "DELETE FROM usuarios WHERE cpf = '$cpf'"; 

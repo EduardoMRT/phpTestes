@@ -12,4 +12,7 @@
         } else {
         echo "Conexão realizada com sucesso!";
 }
+
+//ATALHO PARA INICIO
+echo "<button> <a href='../index.html'> Inicio </a> </button>";
 ?>

@@ -1,8 +1,11 @@
 <?php
-include("conectabd.php");
-include("formulario.php");
 
+include("conectabd.php");
+   $cpf = $_POST['cpf'];
+   $senha = $_POST['senha'];
 // SELECIONANDO DADOS + LOGIN
+$cpf = $_POST['cpf'];
+
 $sqlSeleciona = "SELECT nome, cpf, senha FROM usuarios WHERE cpf = '$cpf'";
 $usuariosList =  mysqli_query($conn, $sqlSeleciona);
 
@@ -11,9 +14,9 @@ if (mysqli_num_rows($usuariosList) > 0) {
         $cpfbd = $usuario['cpf'];
         $senhabd = $usuario['senha'];
         if ($senhabd == $senha) {
-            echo "Você fez login";
+            echo "\nVocê fez login";
         } else {
-            echo "Senha ou cpf incorretos!";
+            echo "\nSenha ou cpf incorretos!";
             die();
         }
 
