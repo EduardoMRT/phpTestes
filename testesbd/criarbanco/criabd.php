@@ -1,6 +1,6 @@
 <?php
- //CRIA UM BANCO DE DADOS
- include("../php/conectabd.php");
+ //CRIA UM BANCO DE DADOS + TABELA
+$conn = mysqli_query("localhost", "admin", "");
 
  $sql1 = "CREATE DATABASE testebd";
  $sql2 = "CREATE TABLE usuarios(
